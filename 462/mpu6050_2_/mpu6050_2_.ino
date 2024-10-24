@@ -39,7 +39,7 @@ void loop() {
 }
 void firebaseinit(){
   firebaseConfig.host = firebasehost;
-  firebaseConfig.signer.tokens.lgacy_token = firebaseauth;
+  firebaseConfig.signer.tokens.legacy_token = firebaseauth;
   Firebase.begin(&firebseConfig,&firebaseauth);
   Firebase.reconnectWiFi(true)
   }
